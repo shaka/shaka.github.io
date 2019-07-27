@@ -33,7 +33,7 @@
   img.shakamika {
     width: 250px;
     height: 250px;
-    margin-top: 50px;
+    bottom: 0;
   }
 
   #form {
@@ -67,9 +67,12 @@
   }
 }
 
+img.shakamika {
+  z-index: -1000;
+}
+
 @media screen and (min-width: 1281px) {
   img.shakamika {
-    margin-top: 30%;
     width: 750px;
     height: 750px;
   }
@@ -105,8 +108,9 @@
 /* Centered text */
 .centered {
   position: absolute;
-  top: 30%;
   left: 50%;
+  top: 30%;
+  z-index: -10;
   transform: translate(-50%, -50%);
 }
 

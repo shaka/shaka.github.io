@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Shaka & Mika Wedding</title>
     <!-- jQuery library -->
@@ -8,91 +9,96 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
-    <script src="./public/index.js"> </script>
-    <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Aguafina+Script|Oleo+Script+Swash+Caps&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Aguafina+Script|Oleo+Script+Swash+Caps|Rouge+Script&display=swap" rel="stylesheet">
+    <script src="./public/index.js">
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aguafina+Script|Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aguafina+Script|Oleo+Script+Swash+Caps|Rouge+Script&display=swap" rel="stylesheet">
     <link href="./public/styles.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
+</head>
 <script>
-// Set the date we're counting down to
-var countDownDate = new Date("May 30, 2020 16:00:00").getTime();
+    // Set the date we're counting down to
+    var countDownDate = new Date("May 30, 2020 16:00:00").getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+    // Update the count down every 1 second
+    var x = setInterval(function() {
 
-  // Get today's date and time
-  var now = new Date().getTime();
+        // Get today's date and time
+        var now = new Date().getTime();
 
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
 
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the result in the element with id="counter"
-  document.getElementById("counter").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+        // Display the result in the element with id="counter"
+        document.getElementById("counter").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("counter").innerHTML = "EXPIRED";
-  }
-}, 1000);
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("counter").innerHTML = "EXPIRED";
+        }
+    }, 1000);
 </script>
-  <body class="page">
+
+<body class="page">
     <div class="nav">
-      <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-          <a href="#invite" class="text-muted menu-item">Wedding Date</a>
-          <br>
-          <a href="http://shakaandmika.com/story" class="text-muted menu-item">How We Met</a>
-          <br>
-          <a href="http://shakaandmika.com/proposal" class="text-muted menu-item">Proposal Pictures</a>
-          <br>
-          <a href="http://shakaandmika.com/rsvp" class="text-muted menu-item">RSVP</a>
-          <br>
-          <a href="http://shakaandmika.com/registry" class="text-muted menu-item">Registry</a>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <a href="#invite" class="text-muted menu-item">Wedding Date</a>
+                <br>
+                <a href="http://shakaandmika.com/story" class="text-muted menu-item">How We Met</a>
+                <br>
+                <a href="http://shakaandmika.com/proposal" class="text-muted menu-item">Proposal Pictures</a>
+                <br>
+                <a href="http://shakaandmika.com/rsvp" class="text-muted menu-item">RSVP</a>
+                <br>
+                <a href="http://shakaandmika.com/registry" class="text-muted menu-item">Registry</a>
+            </div>
         </div>
-      </div>
-      <nav class="navbar navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-        </button>
-      </nav>
+        <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+            </button>
+        </nav>
     </div>
     <div class="meta-section">
-      <div class="section" id="title">
-        <div class="">
-          <img src="./public/floral.png" alt="floral" style="width:100%;">
-          <span class="centered">
-            <img class="shakamika" src="https://i.ibb.co/7GjX6N7/Shaka-Mika-CMYK.png" alt="Shaka-Mika-CMYK" border="0">
-          </span>
+      <Br>
+        <Br>
+        <div class="section" id="title">
+            <div class="">
+                <img src="./public/floral.png" alt="floral" style="width:100%; z-index: -100;">
+                <span class="centered">
+                  <br>
+                  <br>
+                  <img class="shakamika" src="https://i.ibb.co/7GjX6N7/Shaka-Mika-CMYK.png" alt="Shaka-Mika-CMYK" border="0">
+                </span>
+            </div>
+            <span>Shaka & Mika</span>
+            <br>
+            <span> are getting married... </span>
+            <p></p>
         </div>
-        <span>Shaka & Mika</span>
-        <br>
-        <span> are getting married... </span>
-        <p></p>
-      </div>
-      <div class="section" id="invite">
-        <div class="container">
-          <!-- <img src="./public/floral.png" alt="floral" style="width:100%;">
+        <div class="section" id="invite">
+            <div class="container">
+                <!-- <img src="./public/floral.png" alt="floral" style="width:100%;">
           <span class="centered"> -->
-            <h2 id="date">Saturday May 30, 2020</h2>
-            <p id="date">South Shore Cultural Center, Chicago IL</p>
-            <p id="counter"></p>
-          <!-- </span>
-        </div> -->
-      </div>
-      <div class="section" id="rsvp">
-        <h1><a href="http://shakaandmika.com/rsvp"> RSVP </a> </h1>
-      </div>
+                <h2 id="date">Saturday May 30, 2020</h2>
+                <p id="date">South Shore Cultural Center, Chicago IL</p>
+                <p id="counter"></p>
+            </div>
+        </div>
+        <div class="section" id="rsvp">
+            <h1><a href="http://shakaandmika.com/rsvp"> RSVP </a> </h1>
+        </div>
     </div>
-  </div>
-  </body>
+</body>
 </html>
