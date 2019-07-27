@@ -23,6 +23,15 @@
   color: white;
 }
 @media screen and (max-width: 700px) {
+
+  .text-convo-img {
+    padding: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
   h1#date {
     font-size: 2em;
   }
@@ -33,7 +42,7 @@
   img.shakamika {
     width: 250px;
     height: 250px;
-    bottom: 0;
+    margin-bottom: 50%;
   }
 
   #form {
@@ -49,7 +58,7 @@
   }
 }
 
-@media screen and (min-width: 700px) and (max-width: 1280px) {
+@media screen and (min-width: 750px) and (max-width: 1010px) {
   h1#date {
     font-size: 5em;
   }
@@ -60,10 +69,41 @@
   img.shakamika {
     width: 400px;
     height: 400px;
+    margin-bottom: 10%;
   }
 
   .text-convo-img {
     width: 90%;
+  }
+
+  .text-convo-img {
+    padding: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1011px) and (max-width: 1280px) {
+  h1#date {
+    font-size: 5em;
+  }
+  p#date {
+    font-size: 2em;
+  }
+
+  img.shakamika {
+    width: 600px;
+    height: 600px;
+    margin-top: 50%;
+  }
+  .text-convo-img {
+    padding: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
   }
 }
 
@@ -77,7 +117,7 @@ img.shakamika {
     height: 750px;
   }
   .text-convo-img {
-    width: 50%;
+    width: 30%;
   }
 }
 
@@ -320,12 +360,12 @@ body {
 
 /* Gallery Section */
 
-/* .gallery {
+.gallery {
     display: flex;
     flex-wrap: wrap;
     margin: -1rem -1rem;
     padding-bottom: 3rem;
-} */
+}
 
 .gallery-item {
     position: relative;
@@ -369,6 +409,7 @@ body {
     text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
 }
 
+
 .fa-clone,
 .fa-comment {
     transform: rotateY(180deg);
@@ -378,7 +419,7 @@ body {
   .gallery-image {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      /* object-fit: cover; */
   }
 }
 
@@ -523,10 +564,10 @@ Remove or comment-out the code block below to see how the browser will fall-back
     .profile-stats,
     .profile-bio,
     .gallery-item,
-    /* .gallery {
+    .gallery {
         width: auto;
         margin: 0;
-    } */
+    }
 
     @media (max-width: 40rem) {
         .profile {
@@ -564,13 +605,6 @@ Remove or comment-out the code block below to see how the browser will fall-back
   justify-content: center;
   text-align: center;
   margin: 50px 20px;
-}
-.text-convo-img {
-  padding: 50px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
 }
 
 #story > h3 {
