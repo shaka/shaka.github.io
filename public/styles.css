@@ -11,6 +11,13 @@
   margin: -10px 0px 9px -30px;
 }
 
+.content:hover {
+  display: block;
+}
+
+.content {
+  display: none;
+}
 .section {
   text-align: center;
   margin: 0 auto;
@@ -21,6 +28,21 @@
   margin-bottom: 40px;
 }
 
+.square {
+  position: relative;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 
 .rsvp-button {
   margin-top: 20px;
@@ -872,4 +894,87 @@ textarea:hover {
 
 #submit:hover {
   color: #e2dedb;
+}
+
+
+/* gallery on registry */
+
+/* .section#registry {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #E0E0E0;
+  overflow: hidden;
+} */
+
+.section#registry > h1 {
+  font-size: 22px;
+  color: #151E3F;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.media {
+  width: 500px;
+  height: 500px;
+  margin: 0 20px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+      max-width: 100%;
+      height: auto;
+    }
+}
+
+.layer {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 90%;
+  background: #FFF;
+  color: #151E3F;
+  transition: all 0.9s ease;
+  p {
+    transition: all 0.9s ease;
+    transform: scale(0.1)
+  }
+}
+
+.section#registry > p {
+  text-align: center;
+  font-size: 15px;
+  letter-spacing:1px;
+}
+
+.media:hover .layer {
+  opacity: 0.8;
+  width: 90%;
+  transition: all 0.5s ease;
+  p {
+    transform: scale(1);
+    transition: all 0.9s ease;
+  }
+}
+
+@media (max-width: 800px){
+  .section#registry {
+    transform: scale(0.6);
+  }
 }

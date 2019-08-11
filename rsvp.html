@@ -10,13 +10,15 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
     <script src="./public/index.js"> </script>
-    <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Aguafina+Script|Oleo+Script+Swash+Caps&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Aguafina+Script|Oleo+Script+Swash+Caps|Rouge+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yeseva+One" rel="stylesheet">
     <link href="./public/styles.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
+  <script>
+  document.getElementById('id01').style.display='none'
+
+  </script>
   <body class="page">
     <div class="nav">
       <div class="collapse" id="navbarToggleExternalContent">
@@ -38,17 +40,24 @@
         </button>
       </nav>
     </div>
+<div>
+  <img id="upper_left" src="./public/clipflower.png" />
+  <img id="upper_right" src="./public/clipflower.png" />
+</div>
 <form class="form" id="form" class="topBefore">
     <p>Name of Guest</p>
     <input class="rsvp" type="text" name="name" placeholder="Name"/>
     <p>Email</p>
     <input class="rsvp" type="text" name="email" placeholder="Email"/>
     <br>
-    <p>Address</p>
-    <input class="rsvp" type="text" name="address" placeholder="Cleveland, OH"/>
+    <p>Phone Number</p>
+    <input class="rsvp" type="text" name="number" placeholder="2165555555"/>
     <br>
-    <p>Plus One</p>
-    <input class="rsvp" type="text" name="guest" placeholder="Guest Name"/>
+    <!-- <p>Address</p>
+    <input class="rsvp" type="text" name="address" placeholder="Cleveland, OH"/>
+    <br> -->
+    <!-- <p>Plus One</p>
+    <input class="rsvp" type="text" name="guest" placeholder="Guest Name"/> -->
     <br>
     <input class="rsvp-button" id="submit-form" type="submit" value="RSVP">
 </form>

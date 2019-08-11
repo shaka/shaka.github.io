@@ -36,4 +36,8 @@ $( document ).ready(function() {
       })
     })
     $('#id01').css('display', 'block')
+
+  $("#content").mouseover(function() {
+  $( "#content" ).css('display', 'block');
+});
 })
