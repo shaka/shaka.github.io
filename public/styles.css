@@ -695,11 +695,11 @@ Remove or comment-out the code block below to see how the browser will fall-back
     }
 }
 
-#story {
+/* #story {
   justify-content: center;
   text-align: center;
   margin: 50px 20px;
-}
+} */
 
 #story > h3 {
   font-size: 1.5em;
