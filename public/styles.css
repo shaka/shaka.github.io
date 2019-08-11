@@ -2,7 +2,7 @@
   text-align: center;
   background-color: hsl(1, 20%, 94%);
   color: #374f2f;
-  font-family: 'Oleo Script', cursive;
+  font-family: 'Yeseva One', cursive;
 }
 
 .intro {
@@ -14,12 +14,6 @@
 .section {
   text-align: center;
   margin: 0 auto;
-}
-
-.sm {
-  object-fit: cover;
-   width: 50%;
-   height: 66%;
 }
 
 .navbar, .menu-item {
@@ -99,7 +93,7 @@
     position: relative;
     margin: -10px 0px 9px -30px;
     object-fit: cover;
-     width: 330px;
+     width: 350px;
      height: 350px;
   }
 
@@ -138,6 +132,14 @@
 }
 
 @media screen and (min-width: 750px) and (max-width: 1010px) {
+  .sm {
+    object-fit: cover;
+     width: 90%;
+     height: 90%;
+  }
+  .section#invite {
+    font-size: 1.2em;
+  }
   h1#date {
     font-size: 5em;
   }
@@ -165,6 +167,11 @@
 }
 
 @media screen and (min-width: 1011px) and (max-width: 1280px) {
+  .sm {
+    object-fit: cover;
+     width: 90%;
+     height: 90%;
+  }
   h1#date {
     font-size: 5em;
   }
@@ -191,6 +198,14 @@ img.shakamika {
 }
 
 @media screen and (min-width: 1281px) {
+  .sm {
+    object-fit: cover;
+     width: 80%;
+     height: 76%;
+  }
+  .section#invite {
+    font-size: 2.5em;
+  }
   img.shakamika {
     width: 750px;
     height: 750px;
