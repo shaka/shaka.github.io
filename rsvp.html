@@ -10,6 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
     <script src="./public/index.js"> </script>
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Aguafina+Script|Oleo+Script+Swash+Caps&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Aguafina+Script|Oleo+Script+Swash+Caps|Rouge+Script&display=swap" rel="stylesheet">
     <link href="./public/styles.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Satisfy&display=swap" rel="stylesheet">
@@ -37,12 +38,33 @@
         </button>
       </nav>
     </div>
-<form id="form" class="topBefore">
+<form class="form" id="form" class="topBefore">
+    <p>Name of Guest</p>
     <input class="rsvp" type="text" name="name" placeholder="Name"/>
+    <p>Email</p>
     <input class="rsvp" type="text" name="email" placeholder="Email"/>
+    <br>
+    <p>Address</p>
     <input class="rsvp" type="text" name="address" placeholder="Cleveland, OH"/>
+    <br>
+    <p>Plus One</p>
     <input class="rsvp" type="text" name="guest" placeholder="Guest Name"/>
+    <br>
     <input class="rsvp-button" id="submit-form" type="submit" value="RSVP">
 </form>
+<div class="w3-container">
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-teal">
+        <span onclick="document.getElementById('id01').style.display='none'"
+        class="w3-button w3-display-topright">&times;</span>
+
+      </header>
+      <div class="w3-container">
+        <p> Thank you for RSVPing </p>
+      </div>
+    </div>
+  </div>
+</div>
 
 </html>

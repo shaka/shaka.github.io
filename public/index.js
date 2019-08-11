@@ -35,4 +35,5 @@ $( document ).ready(function() {
         }
       })
     })
+    $('#id01').css('display', 'block')
 })

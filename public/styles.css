@@ -2,12 +2,24 @@
   text-align: center;
   background-color: hsl(1, 20%, 94%);
   color: #374f2f;
-  font-family: 'Bad Script', cursive;
+  font-family: 'Oleo Script', cursive;
+}
+
+.intro {
+  left: 0;
+  position: relative;
+  margin: -10px 0px 9px -30px;
 }
 
 .section {
   text-align: center;
-      margin: 0 auto;
+  margin: 0 auto;
+}
+
+.sm {
+  object-fit: cover;
+   width: 50%;
+   height: 66%;
 }
 
 .navbar, .menu-item {
@@ -17,12 +29,79 @@
 
 
 .rsvp-button {
+  margin-top: 20px;
   border-left: none;
   border-right: none;
   background: #374f2f;
   color: white;
 }
+
+#upper_left {
+  width: 10%;
+  /* height: 40%; */
+  position: absolute;
+  top: -30px;
+  left: -40px;
+}
+#upper_right {
+  width: 10%;
+  /* height: 40%; */
+  position: absolute;
+  top: -30px;
+  right: -40px;
+}
+#lower_left {
+  width: 10%;
+  /* height: 40%; */
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+}
+#lower_right {
+  width: 10%;
+  /* height: 40%; */
+  bottom: 0%;
+  right: 0%;
+  position: absolute;
+}
+
 @media screen and (max-width: 700px) {
+  #upper_left {
+    width: 33%;
+    /* height: 40%; */
+  	position: absolute;
+  	top: -30px;
+  	left: -40px;
+  }
+  #upper_right {
+    width: 33%;
+    /* height: 40%; */
+  	position: absolute;
+  	top: -30px;
+  	right: -40px;
+  }
+  #lower_left {
+    width: 33%;
+    /* height: 40%; */
+  	position: absolute;
+  	bottom: 0%;
+  	left: 0;
+  }
+  #lower_right {
+    width: 33%;
+    /* height: 40%; */
+  	bottom: 0%;
+  	right: 0%;
+  	position: absolute;
+  }
+
+  .sm {
+    position: relative;
+    margin: -10px 0px 9px -30px;
+    object-fit: cover;
+     width: 330px;
+     height: 350px;
+  }
 
   .text-convo-img {
     padding: 50px;
@@ -160,7 +239,7 @@ input, button, submit {
 }
 
 #title {
-  font-size: 3em !important;
+  font-size: 1.75em !important;
   text-align: center;
   display: block;
   margin: 10px 20%;
@@ -703,6 +782,7 @@ header {
 
 #form {
   position: relative;
+  font: "Oleo Script";
   width: 500px;
   margin: 50px auto 100px auto;
 }
@@ -719,7 +799,6 @@ input {
   color: #726659;
 
   border: solid 1px #b3aca7;
-  border-bottom: none;
 
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
