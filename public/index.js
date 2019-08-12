@@ -1,6 +1,5 @@
 $( document ).ready(function() {
-  $.fn.serializeObject = function()
-{
+  $.fn.serializeObject = function(){
    var o = {};
    var a = this.serializeArray();
    $.each(a, function() {
@@ -14,7 +13,7 @@ $( document ).ready(function() {
        }
    });
    return o;
-};
+ };
 
   $(".navbar-toggler").click(function(e){
     $( ".meta-section" ).toggle( "slow", function() {
@@ -23,21 +22,17 @@ $( document ).ready(function() {
 
   var $form = $('form#form'),
     url = 'https://script.google.com/macros/s/AKfycbw8_yNP1P_JPW6rtVfKznNQtu2Ji8WQQo5UBzvSzzfGE6Ic7nBa/exec'
-    $('#submit-form').on('click', function(e) {
+    $('#form').on('submit', function(e) {
       e.preventDefault();
       var jqxhr = $.ajax({
         type: "GET",
         url: url,
         dataType: "json",
         data: $form.serializeObject(),
-        success: function() {
-          console.log('posted-->')
+        success: function(msg) {
+          console.log('posted-->', msg)
+          $('#myModal').css('display', 'block');
         }
       })
     })
-    $('#id01').css('display', 'block')
-
-  $("#content").mouseover(function() {
-  $( "#content" ).css('display', 'block');
-});
 })
