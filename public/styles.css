@@ -120,18 +120,18 @@
 
 @media screen and (max-width: 700px) {
   #upper_left {
-    width: 33%;
+    width: 30%;
     /* height: 40%; */
   	position: absolute;
   	top: -30px;
-  	left: -40px;
+  	left: -15px;
   }
   #upper_right {
-    width: 33%;
+    width: 30%;
     /* height: 40%; */
   	position: absolute;
   	top: -30px;
-  	right: -40px;
+  	right: -15px;
   }
   #lower_left {
     width: 33%;
@@ -150,7 +150,7 @@
 
   .sm {
     position: relative;
-    margin: -10px 0px 9px -30px;
+    margin: -10px 0px 10px -20px;
     object-fit: cover;
      width: 350px;
      height: 350px;
