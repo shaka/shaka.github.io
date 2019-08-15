@@ -18,6 +18,8 @@ $( document ).ready(function() {
   $(".navbar-toggler").click(function(e){
     $( ".meta-section" ).toggle( "slow", function() {
     });
+    $( ".meta-section" ).toggle( "slow", function() {
+    });
   })
 
   var $form = $('form#form'),
