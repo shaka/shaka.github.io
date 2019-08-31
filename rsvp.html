@@ -5,17 +5,25 @@
     <title>Shaka & Mika Wedding</title>
     <!-- jQuery library -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet"> --> -->
     <script src="./public/index.js"> </script>
-    <link href="https://fonts.googleapis.com/css?family=Yeseva+One" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Yeseva+One" rel="stylesheet"> -->
     <link href="./public/styles.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page">
+    <script type="text/javascript">
+      console.log('hey')
+      function close(){
+        console.log('clicking')
+        var modal = document.getElementById('modal')
+        modal.style.display == 'none'
+      }
+    </script>
     <div class="nav">
       <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark p-4">
@@ -57,20 +65,12 @@
     <br>
     <input class="rsvp-button" id="submit-form" type="submit" value="RSVP">
 </form>
-<div class="modal fade" tabindex="-1" role="dialog" id="myModal">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      </div>
-      <div class="modal-body">
-        <p>Thank you for RSVPing</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
+<div class="modal" id="modal">
+  <p> Thank you for RSVPing - see you in Chicago! </p>
+  <br>
+  <br>
+  <button class="closeModal" onclick="document.getElementById('modal').style.display='none'"> X </button>
+</div>
   <footer class="footer-basic-centered">
     <p class="footer-links">
       <a href="http://shakaandmika.com/">Home</a>
