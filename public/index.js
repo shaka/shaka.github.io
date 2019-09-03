@@ -33,7 +33,8 @@ $( document ).ready(function() {
         data: $form.serializeObject(),
         success: function(msg) {
           console.log('posted-->', msg)
-          $('modal').css('display', 'block');
+          console.log('modal-->', $('modal'));
+          $('.modal').css('display', 'block');
         }
       })
     })
