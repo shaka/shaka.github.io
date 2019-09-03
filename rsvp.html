@@ -20,7 +20,7 @@
       function close(){
         console.log('clicking')
         var modal = document.getElementById('modal')
-        modal.style.display == 'none'
+        // modal.style.display == 'none'
       }
     </script>
     <div class="nav">
@@ -65,7 +65,9 @@
     <input class="rsvp-button" id="submit-form" type="submit" value="RSVP">
 </form>
 <div class="modal" id="modal">
-  <p> Thank you for RSVPing - see you in Chicago! </p>
+  <p> Thank you for your RSVP - See you in Chicago! </p>
+  <p> Questions?
+    <a href="mailto:76thandking@gmail.com?Subject=Wedding%20Question" target="_top">Email Us</a> </p>
   <br>
   <br>
   <button class="closeModal" onclick="document.getElementById('modal').style.display='none'"> X </button>

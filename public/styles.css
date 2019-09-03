@@ -65,21 +65,23 @@
 .modal {
   background-color: #374f2f;
   color: white;
-  border: 1px white solid;
-  height: 33%;
+  border: 4px white solid;
+  height: 40%;
   margin: 0 auto;
   position: absolute;
-  top: 50px;
+  top: 100px;
   right: 20%;
   left: 20%;
-  padding: 20% 10%;
+  padding: 10% 10%;
+  margin: 5%;
   font: "Open Sans";
-  font-size: 2vh;
-  display: none;
+  font-size: 3vh;
 }
 
-#myModal {
-  display: none;
+button.closeModal {
+  background-color: #374f2f;
+  color: white;
+  font: "Open Sans";
 }
 
 #page-container {
