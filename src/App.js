@@ -10,7 +10,7 @@ const experience = [
   {
    title: 'UpTogether 2019-2021',
   description: 'Full stack engineer supporting communities, government agencies and philanthropists to distribute cash transfers and spark social capital exchange.',
-  links: [],
+  links: ['https://uptogether.org'],
   },
   {
     title: 'The New York Times 2021-present',
