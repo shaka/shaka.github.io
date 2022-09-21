@@ -1,0 +1,22 @@
+body,
+h1 {
+    font-family: "Raleway", sans-serif;
+    letter-spacing: .1px;
+}
+
+body,
+html {
+    height: 100%;
+    background-color: lightgreen;
+}
+
+.bgimg {
+    background-image: url('/w3images/forestbridge.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.text-line {
+    margin: 15px 0;
+}
