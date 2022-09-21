@@ -1,13 +1,22 @@
 body,
-h1 {
+h1, h2 {
     font-family: "Raleway", sans-serif;
-    letter-spacing: .1px;
+}
+
+.lite {
+    background-color: white;
+    color: #2B2B2B;
+}
+
+.dark {
+    background-color: #2B2B2B;
+    color: white;
 }
 
 body,
 html {
     height: 100%;
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
 }
 
 .bgimg {

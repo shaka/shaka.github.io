@@ -5,28 +5,54 @@
     <title>Shaka's Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="./public/index.css" />
 </head>
+<body class="lite">
+    <div class="w3-display-middle">
+        <h1 style="margin-top: 50px">shaka clark</h1>
+        <p class="w3-medium text-line">Passionate about working on things that empower people and bring joy.</p>
+        <hr class="w3-border-white" style="width:100%">
+        <h2>work</h2>
+        <p class="w3-medium text-line">Previously at <a href="https://www.moveon.org">MoveOn.org</a> and
+            co-developed <a href="https://opensource.moveon.org/">Spoke</a>, an open sourced peer to peer texting
+            tool.</p>
+        <p class="w3-medium text-line">Previously at <a href="https://www.uptogether.org">UpTogether</a>
+            on applications that distributed more than $120 million to families during the height of the pandemic.
+        </p>
+        <p class="w3-medium text-line">Now at The New York Times, <a href="https://www.nytimes.com/crosswords">working
+                on games like Wordle and The New York Times
+                Crossword Puzzle.</a></p>
+        <h2>personal projects</h2>
+        <p class="w3-medium text-line">Website for Victoria Alvarez, candidate for alderwoman for Chicago’s 15th Ward
+            <a href="https://vickofor15.com/">vickofor15.com</a></p>
+        <p class="w3-medium text-line">Website for Imani Blooms, a <a href="https://imanibloomsjoy.com/">small black owned floral farm</a> in Detroit.</p>
+        <p class="w3-medium text-line">Website for Watrflows, a Black History Collective Project
+            <a href="https://www.watrflows.com/">watrflows.com</a></p>
 
-<body>
-
-    <div class="bgimg w3-display-container w3-animate-opacity">
-        <div class="w3-display-middle">
-            <h1 class="w3-jumbo w3-animate-top">shaka clark</h1>
-            <p class="w3-medium text-line">Passionate about working on things that empower people and bring joy.</p>
-            <hr class="w3-border-white" style="width:100%">
-            <p class="w3-medium text-line">Previously at <a href="https://www.moveon.org">MoveOn.org</a> and
-                co-developed <a href="https://opensource.moveon.org/">Spoke</a>, an open sourced peer to peer texting
-                tool.</p>
-            <p class="w3-medium text-line">Previously at <a href="https://www.uptogether.org">UpTogether</a>
-                on applications that distributed more than $120 million to families during the height of the pandemic.
-            </p>
-            <p class="w3-medium text-line">Now at The New York Times, <a
-                    href="https://www.nytimes.com/crosswords">working on games like Wordle and The New York Times
-                    Crossword Puzzle.</a></p>
-        </div>
+    </div>
+    <div>
+        <button style="margin: 10px;" id="displayMode">dark mode</button>
     </div>
 </body>
+<script>
+    function displayMode() {
+        const classList = document.body.classList
+        console.log('classList')
+        if(classList.contains('lite')) {
+            document.body.classList.remove('lite')
+            document.body.classList.add('dark');
+        } else if (classList.contains('dark')) {
+            document.body.classList.remove('dark')
+            document.body.classList.add('lite');
+        }
+    }
+    var element = document.getElementById("displayMode");
+    element.onclick = function(event) {
+        console.log(event);
+        displayMode()
+    }
+</script>
 </html>
