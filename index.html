@@ -15,26 +15,42 @@
 <body>
     <div class="w3-display-middle text-container">
         <h1 style="margin-top: 50px">shaka clark</h1>
+        <p class="w3-medium text-line"><a href="mailto:shakalee14@gmail.com" target="_blank">shakalee14@gmail.com</a> | github: <a href="https://www.github.com/shakalee14">shakalee14</a> | <a target="_blank" href="https://www.linkedin.com/in/shaka-c-5a8a1115b/">linkedin</a></p>
         <p class="w3-medium text-line">Passionate about working on things that empower people and bring joy.</p>
         <hr class="w3-border-white" style="width:100%">
         <h2>work</h2>
-        <p class="w3-medium text-line">Previously at <a href="https://www.moveon.org">MoveOn.org</a> and
-            co-developed <a href="https://opensource.moveon.org/">Spoke</a>, an open sourced peer to peer texting
+        <p class="w3-medium text-line">Previously at <a target="_blank" href="https://www.moveon.org">MoveOn.org</a> and
+            co-developed <a target="_blank" href="https://opensource.moveon.org/">Spoke</a>, an open sourced peer to peer texting
             tool.</p>
-        <p class="w3-medium text-line">Previously at <a href="https://www.uptogether.org">UpTogether</a>
+        <p class="w3-medium text-line">Previously at <a target="_blank" href="https://www.uptogether.org">UpTogether</a>
             on applications that distributed more than $120 million to families during the height of the pandemic.
         </p>
-        <p class="w3-medium text-line">Now at The New York Times, <a href="https://www.nytimes.com/crosswords">working
+        <p class="w3-medium text-line">Now at The New York Times, <a target="_blank" href="https://www.nytimes.com/crosswords">working
                 on games like Wordle and The New York Times
                 Crossword Puzzle.</a></p>
         <h2>personal projects</h2>
-        <p class="w3-medium text-line">Website for Victoria Alvarez, candidate for alderwoman for Chicago’s 15th Ward
-            <a href="https://vickofor15.com/">vickofor15.com</a></p>
-        <p class="w3-medium text-line">Website for Imani Blooms, a <a href="https://imanibloomsjoy.com/">small black
-                owned floral farm</a> in Detroit.</p>
-        <p class="w3-medium text-line">Website for Watrflows, a Black History Collective Project
-            <a href="https://www.watrflows.com/">watrflows.com</a></p>
+        <div>
+        <div class="mySlides"><img src="./public/vickoweb.png" style="width: 300px;height: 250px;">
+            <button class="w3-button" onclick="plusDivs(+1)">&#10095;</button>
+            <p class="w3-medium text-line">Website for Victoria Alvarez, candidate for alderwoman for Chicago’s 15th
+                Ward
+                <a target="_blank" href="https://vickofor15.com/">vickofor15.com</a></p>
+        </div>
+        <div class="mySlides" >
+            <img src="./public/imani3.png" style="width: 300px;height: 220px;">
+            <button class="w3-button" onclick="plusDivs(+1)">&#10095;</button>
+            <p class="w3-medium text-line">Website for Imani Blooms, a <a target="_blank" href="https://imanibloomsjoy.com/">small black
+                    owned floral farm</a> in Detroit.</p>
+        </div>
+        <div class="mySlides"><img src="./public/watr.png" style="width: 300px; height: 250px;">
+            <button class="w3-button" onclick="plusDivs(+1)">&#10095;</button>
+            <p class="w3-medium text-line">Website for Watrflows, a Black History Collective Project
+                <a target="_blank" href="https://www.watrflows.com/">watrflows.com</a></p>
+        </div>
+        </div>
+        <div>
 
+        </div>
     </div>
     <div>
         <button style="margin: 10px;" id="displayMode" class="btn-toggle">dark mode</button>
@@ -76,6 +92,23 @@
         }
         localStorage.setItem("theme", theme);
     });
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length };
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+    }
 </script>
 
 </html>
