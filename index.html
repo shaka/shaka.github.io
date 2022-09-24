@@ -8,10 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <meta name="color-scheme" content="dark light">
     <link rel="stylesheet" href="./public/index.css" />
 </head>
-<body class="lite">
-    <div class="w3-display-middle">
+
+<body>
+    <div class="w3-display-middle text-container">
         <h1 style="margin-top: 50px">shaka clark</h1>
         <p class="w3-medium text-line">Passionate about working on things that empower people and bring joy.</p>
         <hr class="w3-border-white" style="width:100%">
@@ -28,20 +30,21 @@
         <h2>personal projects</h2>
         <p class="w3-medium text-line">Website for Victoria Alvarez, candidate for alderwoman for Chicago’s 15th Ward
             <a href="https://vickofor15.com/">vickofor15.com</a></p>
-        <p class="w3-medium text-line">Website for Imani Blooms, a <a href="https://imanibloomsjoy.com/">small black owned floral farm</a> in Detroit.</p>
+        <p class="w3-medium text-line">Website for Imani Blooms, a <a href="https://imanibloomsjoy.com/">small black
+                owned floral farm</a> in Detroit.</p>
         <p class="w3-medium text-line">Website for Watrflows, a Black History Collective Project
             <a href="https://www.watrflows.com/">watrflows.com</a></p>
 
     </div>
     <div>
-        <button style="margin: 10px;" id="displayMode">dark mode</button>
+        <button style="margin: 10px;" id="displayMode" class="btn-toggle">dark mode</button>
     </div>
 </body>
 <script>
     function displayMode() {
         const classList = document.body.classList
         console.log('classList')
-        if(classList.contains('lite')) {
+        if (classList.contains('lite')) {
             document.body.classList.remove('lite')
             document.body.classList.add('dark');
         } else if (classList.contains('dark')) {
@@ -49,10 +52,30 @@
             document.body.classList.add('lite');
         }
     }
-    var element = document.getElementById("displayMode");
-    element.onclick = function(event) {
-        console.log(event);
-        displayMode()
+    const btn = document.querySelector(".btn-toggle");
+    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+    const currentTheme = localStorage.getItem("theme");
+    if (currentTheme == "dark") {
+        document.body.classList.toggle("dark-theme");
+    } else if (currentTheme == "light") {
+        document.body.classList.toggle("light-theme");
     }
+
+    btn.addEventListener("click", function () {
+        if (prefersDarkScheme.matches) {
+            document.body.classList.toggle("light-theme");
+            var theme = document.body.classList.contains("light-theme")
+                ? "light"
+                : "dark";
+        } else {
+            document.body.classList.toggle("dark-theme");
+            var theme = document.body.classList.contains("dark-theme")
+                ? "dark"
+                : "light";
+        }
+        localStorage.setItem("theme", theme);
+    });
 </script>
+
 </html>
