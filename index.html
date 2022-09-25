@@ -107,12 +107,21 @@
   <script>
     const btn = document.getElementById("btn");
     const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+    function buttonText () {
+        var theme = document.body.classList.contains("light-theme")
+          ? "light"
+          : "dark";
+        const opposite = theme === "dark" ? "light" : "dark";
+        btn.textContent = `${opposite} mode`;
+    }
 
     const currentTheme = localStorage.getItem("theme");
     if (currentTheme == "dark") {
       document.body.classList.toggle("dark-theme");
+      buttonText()
     } else if (currentTheme == "light") {
       document.body.classList.toggle("light-theme");
+      buttonText()
     }
 
     btn.addEventListener("click", function () {
@@ -121,15 +130,13 @@
         var theme = document.body.classList.contains("light-theme")
           ? "light"
           : "dark";
-        btn.textContent = `light mode`;
       } else {
         document.body.classList.toggle("dark-theme");
         var theme = document.body.classList.contains("dark-theme")
           ? "dark"
           : "light";
-        const opposite = theme === "dark" ? "light" : "dark";
-        btn.textContent = `${opposite} mode`;
       }
+      buttonText()
       localStorage.setItem("theme", theme);
     });
     var slideIndex = 1;
